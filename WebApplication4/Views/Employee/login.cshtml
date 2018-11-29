@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "login";
+}
+
+<h2>login</h2>
+
+
+
+
+@if (ViewBag.isValidated)
+{
+
+
+    <div class="alert alert-success">
+        <strong>Message!</strong> @ViewData["msg"] @ViewData["isValidated"]
+
+
+
+    </div>
+
+}
+
+
+else
+{
+
+
+    <div class="alert alert-danger">
+        <strong>Message!</strong> @ViewData["msg"] @ViewData["isValidated"]
+
+
+
+    </div>
+
+}
+
+
+

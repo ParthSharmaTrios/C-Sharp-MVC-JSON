@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" action="login">
+    <input type="text" name="u_name" placeholder="enter your username"/>
+
+    <input type="password" name="pwd" placeholder="enter your password" />
+
+    <input type="submit" />
+</form>
+
+
+
+@foreach (var album in ViewBag.album) {
+
+    <img src="@album.url" height="50" width="50" /><br />
+
+
+}
